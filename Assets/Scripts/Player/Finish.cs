@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField] private GameObject GameOverPanel;
+    [SerializeField] private GameObject gameOverPanel;
     [SerializeField] MainMenu menu;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            GameOverPanel.gameObject.SetActive(true);
+            gameOverPanel.gameObject.SetActive(true);
             menu.PauseGame();
         }
     }
