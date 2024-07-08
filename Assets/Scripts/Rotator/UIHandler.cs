@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class UIHandler : MonoBehaviour
 {
-    [SerializeField] private Rotating rotator;
+    [SerializeField] private MazeRotator mazeRotator;
 
     private void Start()
     {
-        if (rotator == null)
+        if (mazeRotator == null)
         {
             Debug.LogError("Rotator is not assigned!");
         }
@@ -16,25 +16,25 @@ public class UIHandler : MonoBehaviour
 
     public void OnLeftButtonDown()
     {
-        if (rotator != null)
+        if (mazeRotator != null)
         {
-            rotator.OnLeftButtonDown();
+            mazeRotator.OnLeftButtonDown();
         }
     }
 
     public void OnRightButtonDown()
     {
-        if (rotator != null)
+        if (mazeRotator != null)
         {
-            rotator.OnRightButtonDown();
+            mazeRotator.OnRightButtonDown();
         }
     }
 
     public void OnButtonUp()
     {
-        if (rotator != null)
+        if (mazeRotator != null)
         {
-            rotator.OnButtonUp();
+            mazeRotator.OnButtonUp();
         }
     }
 }

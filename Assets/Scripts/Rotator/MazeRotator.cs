@@ -2,16 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotating : MonoBehaviour
+public class MazeRotator : MonoBehaviour
 {
-    //[SerializeField] private float rotationSpeed = 10;
-
-    //private void Update()
-    //{
-    //    transform.Rotate(0,0, -Time.deltaTime * rotationSpeed);
-    //}
-
-
+    // input for rotation maze speed
     [SerializeField] private float rotationSpeed = 50;
 
     private bool isMovingLeft = false;
